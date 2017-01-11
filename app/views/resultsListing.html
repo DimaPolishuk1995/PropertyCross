@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="toolBar">
+        <h1>{{title}}</h1>
+    </div>
+    <div>
+        <div>
+            <a class="property" ng-repeat="property in properties" ui-sref="property({id:{{$index}}})">
+                <img ng-src="{{property.url}}"/>
+                <h2 class="price">{{property.price}}</h2>
+                <p class="title">{{property.title}}</p>
+            </a>
+            <md-button class="md-raised md-primary button" ng-click="loadMore()" style="margin: 0">Load more</md-button>
+        </div>
+    </div>
+</div>

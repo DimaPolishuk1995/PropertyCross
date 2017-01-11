@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="toolBar">
+        <h1>Favourites</h1>
+    </div>
+    <div style="text-align: center; margin-bottom: 30px; border-bottom: 1px solid #ead0d0;"
+         ng-repeat="property in favourites track by $index">
+        <i class="fa fa-trash-o" aria-hidden="true" ng-click="removeFavouriteProperty($index)"></i>
+        <h2>{{property.price}}</h2>
+        <h3>{{property.title}}</h3>
+        <img ng-src="{{property.imageURL}}"/>
+        <p>{{property.rooms}}</p>
+        <p style="margin-bottom: 20px">{{property.summary}}</p>
+    </div>
+</div>

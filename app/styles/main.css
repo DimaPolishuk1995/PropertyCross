@@ -1,0 +1,110 @@
+body {
+    background: #F8F8F8;
+}
+
+.container {
+    padding: 10px;
+}
+
+.toolBar {
+    text-align: center;
+    background: #4880E8;
+    height: 50px;
+    margin: -15px -10px 40px;
+}
+
+.toolBar h1 {
+    font: 26px Calibri;
+    display: inline-block;
+    padding-top: 9px;
+    color: #F8F8F8;
+}
+
+.toolBar a {
+    float: right;
+    padding-top: 9px;
+    padding-right: 5px;
+    font: 26px Calibri;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+.toolBar button {
+    float: right;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search button {
+    margin-right: 5px;
+}
+
+.search-input {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 10px);
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px 0 5px 10px;
+}
+
+.recentSearches {
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.recentSearches span {
+    margin: 0 5px;
+}
+
+.property {
+    clear: both;
+    display: block;
+    height: 80px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ead0d0;
+}
+
+.property img {
+    float: left;
+    padding-right: 10px;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.material {
+    margin: 20px 0 0 ;
+    padding-bottom: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.button{
+    text-transform: none;
+}
+
+.panel-title{
+    text-align: center;
+}
+
+.fa-trash-o {
+    float: right;
+    margin: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

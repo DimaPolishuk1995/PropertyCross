@@ -1,0 +1,30 @@
+<div class="container" data-ng-controller="SearchPage">
+    <h1>{{properties}}</h1>
+    <div class="toolBar">
+        <h1>PropertyCross</h1>
+        <a ng-click="goTofavouritesPage()">Faves</a>
+    </div>
+    <p class="description">
+        Use the form below to search for houses to buy. You can search by place-name, postcode, or click 'My location',
+        to search in your current location!
+    </p>
+    <form class="search">
+        <md-input-container class="md-block material" flex-gt-sm>
+            <input ng-model="searchText" placeholder="Search">
+        </md-input-container>
+        <md-button class="md-raised md-primary button" ng-click="search(searchText)">Go</md-button>
+        <md-button class="md-raised md-primary button" ng-click="searchMyLocation()">My Location</md-button>
+    </form>
+    <p ng-show="showError">{{ errorMessage }}</p>
+    <div ng-show="showLocations">
+        <div>Please select a location below:</div>
+        <div ng-repeat="location in locations" ng-click="search(location.key)">{{ location.value }}</div>
+    </div>
+    <uib-accordion ng-repeat="lastSearch in lastSearches track by $index" ng-click="search(lastSearch)"
+                   ng-show="showRecentSearches">
+        <div uib-accordion-group class="panel-default">
+            Search proposals in {{lastSearch}}
+            <div uib-accordion-heading="">{{lastSearch}}</div>
+        </div>
+    </uib-accordion>
+</div>

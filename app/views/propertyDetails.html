@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="toolBar">
+        <h1>Property Details</h1>
+        <a><i ng-click="saveToFavourites()" class="fa fa-star" aria-hidden="true"></i></a>
+    </div>
+    <div style="text-align: center">
+        <h2>{{property.price}}</h2>
+        <h3>{{property.title}}</h3>
+        <img ng-src="{{property.imageURL}}"/>
+        <p>{{property.rooms}}</p>
+        <p>{{property.summary}}</p>
+    </div>
+</div>
